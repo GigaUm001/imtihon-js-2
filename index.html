@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#2A2A2A]">
+
+  <header class="bg-[#2A2A2A] p-10">
+    <div class="w-[900px] mx-auto mb-[50px]">
+      <img src="./MOVIES!.png" alt="movies">
+    </div>
+    <div class="flex gap-[40px] w-[800px] mx-auto">
+      <input id="searchInput" class="rounded-[5px] outline-none bg-[#FFFFFF] w-[300px] pl-[10px] py-[5px]" type="text"
+        placeholder="Enter your movie name:">
+        <details class="dropdown w-[309px] h-[36px] rounded-[6px] z-40 text-[black] bg-[white]  content-center">
+          <summary>All</summary>
+          <ul class="menu dropdown-content bg-[gray] rounded-box z-[3]  w-52 p-2 shadow">
+            <li class="z-40 my-[10px]"><a class="category" data-category="All">All</a></li>
+            <li class="z-40 "><a class="category" data-category="Documentary">Documentary</a></li>
+            <li class="z-40 my-[10px]"><a class="category" data-category="Music">Music</a></li>
+            <li class="z-40 "><a class="category" data-category="Adventure">Adventure</a></li>
+            <li class="z-40 my-[10px]"><a class="category" data-category="Animation">Animation</a></li>
+            <li class="z-40 "><a class="category" data-category="Comedy">Comedy</a></li>
+            <li class="z-40 my-[10px]"><a class="category" data-category="Family">Family</a></li>
+            <li class="z-40 "><a class="category" data-category="Fantasy">Fantasy</a></li>
+            <li class="z-40 my-[10px]"><a class="category" data-category="Drama">Drama</a></li>
+            <li class="z-40 "><a class="category" data-category="Romance">Romance</a></li>
+            <li class="z-40 my-[10px]"><a class="category" data-category="Sci-Fi">Sci-Fi</a></li>
+            <li class="z-40 "><a class="category" data-category="Action">Action</a></li>
+            <li class="z-40 my-[10px]"><a class="category" data-category="Horror">Horror</a></li>
+          </ul>
+        </details>
+      <details class="dropdown w-[309px] h-[36px] rounded-[6px] text-[black] bg-[white]  content-center">
+        <summary>Sort</summary>
+        <ul class="menu dropdown-content bg-[gray] rounded-box z-[1] w-52 p-2 shadow">
+          <li id="sort1" class="mb-[10px]"><a>A-Z</a></li>
+          <li id="sort2" class="cursor-pointer"><a>Z-A</a></li>
+        </ul>
+      </details>
+     <button id="btn" class="bg-[#D9534F] p-2 rounded-[5px]">Search</button>
+    </div>
+  </header>
+
+  <div class="w-[100%] mx-auto bg-[#1D1D1D] p-10">
+    <div id="cardRow" class="flex flex-wrap justify-center gap-[50px] ">
+
+    </div>
+  </div>
+
+  <script type="module" src="./movies.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
